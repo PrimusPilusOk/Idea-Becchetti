@@ -1,0 +1,109 @@
+header{
+    width: 95% auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+header .logo img{
+    width: 110px;
+    height: 90px;
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 37px;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav ul{
+    margin-top: 2px;
+}
+header nav ul li{
+    padding: 30px;
+    display: inline-block;
+}
+header nav ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgb(222, 25, 70);
+    font-size: 18px;
+}
+header nav ul li a:hover{
+    color: #999;
+}
+header nav ul li a.active{
+    color: #ccdcfc;
+}
+header nav .botonera{
+    float: right;
+    border-radius: 50px;
+    background: rgb(5, 163, 73);
+    padding: 5px;
+    font-size: 16px;
+}
+header .botonera li button{
+    padding: 15px;
+    border: none;
+    border-radius: 40px;
+    background: #ddfccc;
+    font-size: 16px;
+    color: rgb(222, 25, 25);
+    text-transform: capitalize;
+    cursor: pointer;
+}
+section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+section .ayuda{
+    position: absolute;
+    top: 20;
+    right: 0;
+    width: 50%;
+    transform: translateX(40%);
+}
+section .ayuda h1{
+    font-size: 35px;
+    font-weight: 900;
+    color: rgb(222, 25, 70);
+    text-transform: capitalize;
+}
+section .ayuda h2{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(122, 25, 70);
+    text-transform: capitalize;
+}
+section .ayuda h3{
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(100, 125, 270);
+    text-transform: capitalize;
+}
+section .imagen{
+    width: 100%;
+    height: 100%;
+}
+footer{
+    background-color: bisque;
+}
+
+.redes h2{
+    font-style: italic;
+    font-size: 40px;
+    text-align: center;
+    color: rgb(119, 0, 255)
+}
+
+footer div {
+    width: 100%; 
+    height: 100%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Pet Care - Clínica Veterinaria.</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/7248230.jpg" alt="logo">
+        </div>
+        <nav>
+            <ul class="botonera">
+                <li><button id="boton_turnos">Turnos</button></li>
+                <li><button id="boton_staff">Staff Profesional</button></li>
+                <li><button id="boton_distribuidores">Distribuidores</button></li>
+                <li><a href="./pages/Sobre nosotros.html">Sobre Nosotros</a></li>
+                <li><button id="boton_servicios">Servicios</button></li>
+                <li><a href="./pages/Practicas.html">Prácticas</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+<h1>Atencion programada</h1>
+<section>
+        <form id="form_turnos">
+            <div id="resultado"></div>
+            <label for="cantidad_turnos">¿Cuántos turnos generales desea tomar?</label>
+            <input type="number" id="cantidad_turnos" name="cantidad_turnos" min="1" max="5" required>
+            <br>
+            <label for="jubilado">¿Es usted jubilado?</label>
+            <input type="checkbox" id="jubilado" name="jubilado">
+            <br>
+            <input type="submit" value="Tomar turnos">
+        </form>
+</section>
+<h1>Atencion por guardia</h1>
+<section>
+        <form id="form_guardia">
+        <label for="nombre_paciente">Nombre del dueño:</label>
+        <input type="text" id="nombre_paciente" name="nombre_paciente" value="Juan Pérez" required>
+        <br>
+        <label for="nombre_mascota">Nombre de la mascota:</label>
+        <input type="text" id="nombre_mascota" name="nombre_mascota" value="Firulais" required>
+        <br>
+        <label for="cantidad_pacientes">¿Cuántos turnos?</label>
+        <input type="number" id="cantidad_pacientes" name="cantidad_pacientes" min="1" max="10" value="1" required>
+        <br>
+        <input type="submit" value="Asignar turnos">
+        </form>
+        <div id="resultados"></div>
+</section>
+<h1>Distribuidores</h1>
+    <section>
+    <form id="formulario_producto">
+        <label for="nombre">Nombre del producto:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <br>
+        <label for="precio">Precio del producto:</label>
+        <input type="number" id="precio" name="precio" step="0.01" required>
+        <br>
+        <label for="cantidad">Cantidad de productos:</label>
+        <input type="number" id="cantidad" name="cantidad" required>
+        <br>
+        <input type="submit" value="Agregar producto">
+            </form>
+            <div id="mensaje"></div>
+            <div id="productos"></div>
+</section>
+</main>
+<script src="./script/main.js"></script>
+</body>
+</html>
